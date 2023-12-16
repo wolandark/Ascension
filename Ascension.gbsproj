@@ -84,7 +84,11 @@
             "playerHit3Script": [],
             "type": "TOPDOWN",
             "symbol": "scene_logo",
-            "autoFadeEventCollapse": true
+            "autoFadeEventCollapse": true,
+            "paletteIds": [
+                "",
+                "dmg"
+            ]
         },
         {
             "id": "4912bee2-387a-472f-ae4f-6679b6149517",
@@ -39152,7 +39156,7 @@
                             "command": "EVENT_GBVM_SCRIPT",
                             "args": {
                                 "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 2",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "9019b7eb-9360-436e-9b5d-c035df4a924e"
                         }
@@ -39528,7 +39532,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -39547,7 +39551,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -39671,6 +39675,13 @@
                                                                             "id": "40c13823-6c89-4681-aec6-7725611931ca"
                                                                         },
                                                                         {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "48b61c6b-23ec-41b3-b080-9c2c4f9517be"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_CAMERA_SHAKE",
                                                                             "args": {
                                                                                 "time": 0.5,
@@ -39755,7 +39766,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -39774,7 +39785,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -39898,6 +39909,13 @@
                                                                             "id": "56f11834-8801-4d2c-93a1-467bb07ef560"
                                                                         },
                                                                         {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "dd707434-f9df-45d4-9ab0-048d2861bf56"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_CAMERA_SHAKE",
                                                                             "args": {
                                                                                 "time": 0.5,
@@ -39982,7 +40000,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -40001,7 +40019,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -40125,6 +40143,13 @@
                                                                             "id": "0c985e3d-0ffd-42e0-9962-6e1a15bca664"
                                                                         },
                                                                         {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "738372d1-1df7-4726-9a0b-1bb8eff03d54"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_CAMERA_SHAKE",
                                                                             "args": {
                                                                                 "time": 0.5,
@@ -40240,7 +40265,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -40381,6 +40406,13 @@
                                                                                 "__collapse": false
                                                                             },
                                                                             "id": "80024a76-98b1-4329-8b2c-10ef4d02127f"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "a8a2eb8e-db3c-4867-a7ae-eb2fd22e7386"
                                                                         },
                                                                         {
                                                                             "command": "EVENT_CAMERA_SHAKE",
@@ -42276,7 +42308,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -42419,6 +42451,13 @@
                                                                             "id": "a74e6729-d41d-4c2c-91cb-eee1a1588dac"
                                                                         },
                                                                         {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "cb75d49c-940d-4b95-acee-5fa1bd74d76c"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_CAMERA_SHAKE",
                                                                             "args": {
                                                                                 "time": 0.5,
@@ -42503,7 +42542,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -42646,6 +42685,13 @@
                                                                             "id": "b170cd0c-5613-4dcc-b6cf-f4df1c87abe1"
                                                                         },
                                                                         {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "4f6455f7-c8a6-436d-b2e0-e47a8187f1da"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_CAMERA_SHAKE",
                                                                             "args": {
                                                                                 "time": 0.5,
@@ -42730,7 +42776,7 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -42871,6 +42917,13 @@
                                                                                 "__collapse": false
                                                                             },
                                                                             "id": "08abd0a1-9108-4e09-85af-3d14c931d156"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_SET_CONST_INT16      _plat_extra_jumps, 1"
+                                                                            },
+                                                                            "id": "798acb83-ccfe-483d-a54d-9005b2238a0a"
                                                                         },
                                                                         {
                                                                             "command": "EVENT_CAMERA_SHAKE",
@@ -78910,7 +78963,7 @@
         "showConnections": true,
         "worldScrollX": 0,
         "worldScrollY": 0,
-        "zoom": 78,
+        "zoom": 104.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -78938,9 +78991,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            246,
-            276,
-            293
+            241,
+            270,
+            287
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
