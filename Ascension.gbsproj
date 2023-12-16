@@ -1,5 +1,5 @@
 {
-    "name": "djump",
+    "name": "Ascension",
     "author": "woland",
     "_version": "3.1.0",
     "_release": "3",
@@ -5830,8 +5830,8 @@
                                                 "I thought the witch had\nstopped ...",
                                                 "but you're here!",
                                                 "And that means ...",
-                                                "You were drawn to this\nplace.",
-                                                "Yes! Drawn! ",
+                                                "You wanted drawn to be\nhere ...",
+                                                "Yes! It is your choice!",
                                                 "The only way out is\nthrough ...",
                                                 "Go on now. Climb \nascending!\n",
                                                 "I'll see you again."
@@ -5862,6 +5862,114 @@
                     "id": "d0dd437b-361b-4099-ae98-a51641787028",
                     "x": 18,
                     "y": 242
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_35",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "You can save your game\nat the torch lights."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "8a25c179-9bd4-4dee-90be-69dc57715c9e"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8ec31932-2f5d-49b1-918e-2b39eb9818aa",
+                    "x": 12,
+                    "y": 101
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_36",
+                    "script": [
+                        {
+                            "id": "25ed3f12-8aa7-46ae-ac97-8d041888e328",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "c0ad0149-f7a2-4b5e-9976-ff231110984b",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "d16a2b60-c0a2-481d-af80-48a460abc430",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "2f71493d-d05a-4df6-9b5e-ed12903b6a0b",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fa39bfea-bc9d-4ea7-896a-cf9a886610cf",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "cb6a2ffa-10f2-48b5-aab6-aa82cc1ee8f5",
+                    "x": 7,
+                    "y": 73
                 }
             ],
             "triggers": [
@@ -13285,6 +13393,80 @@
                     "id": "da3ea5c6-21a2-42d2-942b-717d2ed0a33c",
                     "x": 11,
                     "y": 69
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_37",
+                    "script": [
+                        {
+                            "id": "08db879f-237c-4bf8-a618-0d34e7e60e51",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "19c65c89-4fea-4ab0-9690-8f6ee2107eed",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3e28dfb3-5b0b-4d53-99a5-168a919aeb7c",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "98bd7ed1-2294-45ad-9f59-ccf857900639",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "24d2705f-4de4-46fe-ba0a-e212d7400a26",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "58855640-a9d7-421b-a87b-dc9fb22e70f8",
+                    "x": 0,
+                    "y": 151
                 }
             ],
             "triggers": [
@@ -18893,6 +19075,80 @@
                     "id": "2793516d-7c56-4dd8-8c8b-f3a803aa2df8",
                     "x": 4,
                     "y": 159
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_38",
+                    "script": [
+                        {
+                            "id": "5216496b-04aa-4123-a237-8ac9e1bc8823",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "7f4d4141-67da-4069-a26c-96f9df56aaa1",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "4e992116-b7c4-4f3c-85ef-b328ed56ae5f",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "bba523c3-81fd-44a4-901a-0ad69c1b471e",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "1466ef84-c87e-4ce1-8d70-95e75677bbd9",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "e3bed664-39ff-4f7e-9e5c-a8382b4dcf31",
+                    "x": 10,
+                    "y": 142
                 }
             ],
             "triggers": [
@@ -21881,7 +22137,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -21890,15 +22146,66 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_34",
-                    "script": [],
+                    "script": [
+                        {
+                            "id": "83e671f4-9ecb-4b63-8668-1f0fd4068a86",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "f6350c18-8e75-438c-9cd8-bd500e1e7c0a",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "a6eb1fc5-8c26-471f-b308-696222a65952",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "505c0590-237a-4544-af8a-6209576cf8f8",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "31d21333-e09e-4b6d-ac91-70ababd7ea08",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
-                    "id": "70677a0a-3eda-48a5-a492-8ae543c8b838",
+                    "id": "43e5b138-ad08-4931-bf16-6ffba3e85e42",
                     "x": 14,
-                    "y": 9
+                    "y": 8
                 }
             ],
             "triggers": [],
@@ -30364,6 +30671,80 @@
                     "id": "14d34ddf-0713-48d1-8e21-5449c983bc5b",
                     "x": 0,
                     "y": 1
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_39",
+                    "script": [
+                        {
+                            "id": "559a74fd-d865-424e-bece-57171f1e274b",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "0a01cf3b-f621-4700-928c-7fc6788b6883",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "c589f144-9b00-4f21-b8e0-4e061cba574f",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "4480fe1b-b8e8-4452-a3c3-854ac058e104",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "63fbe6e5-a360-4e67-976e-2c946aeed24e",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "b176c698-617f-4c06-9dcf-b596eece5fe7",
+                    "x": 37,
+                    "y": 8
                 }
             ],
             "triggers": [
@@ -34682,6 +35063,80 @@
                     "id": "ac4771fc-bcfe-4d44-b45d-21939f4ad19c",
                     "x": 0,
                     "y": 1
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_40",
+                    "script": [
+                        {
+                            "id": "f3931412-2a75-401d-afc4-5b861ab26fba",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save Game",
+                                "falseText": "Cancel",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "45aa2a6e-19a2-49b2-bbbc-eb941f18de1b",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "7c5e3c8b-2f56-49e3-aa60-2dd5c7fd3d4e",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "da9e80e1-98a6-4cb2-a148-0aac2888597e",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Game progress has\nbeen saved."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "5c2a146e-a8b6-4e72-8b3b-9ea889248390",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "It is now safe to\nturn off your\nsystem."
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "false": []
+                            }
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "1a8ac2b4-6247-4f63-a7ac-43cf6d591983",
+                    "x": 137,
+                    "y": 9
                 }
             ],
             "triggers": [
@@ -70288,6 +70743,227 @@
             "animSpeed": 15
         },
         {
+            "id": "9d6afe9c-aae1-439f-97f2-e43c08fbf2ad",
+            "name": "torch2",
+            "symbol": "sprite_torch2",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "torch2.png",
+            "checksum": "44ef3e5d4628e8df0faeffabf205b3eb263e7a6b",
+            "width": 64,
+            "height": 16,
+            "states": [
+                {
+                    "id": "bcf5fb0f-9cc2-4904-9222-5ccd8f0240ff",
+                    "name": "",
+                    "animationType": "fixed",
+                    "flipLeft": false,
+                    "animations": [
+                        {
+                            "id": "2493ab90-7d1f-40aa-b715-b7a1525d1a62",
+                            "frames": [
+                                {
+                                    "id": "1f492caa-8bac-4baa-ab86-b11005baf29b",
+                                    "tiles": [
+                                        {
+                                            "id": "4870b024-d399-42c4-9299-c1281ca08678",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "897ab719-6f16-4f87-8d5d-d3284d15add7",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ac9edea5-802e-463f-bc75-72a017578e99",
+                                    "tiles": [
+                                        {
+                                            "id": "547d4fde-82e5-4130-85e5-8fe730875669",
+                                            "x": 0,
+                                            "y": -1,
+                                            "sliceX": 16,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "abb33af7-012a-4128-ba57-41a3f9553e6c",
+                                            "x": 8,
+                                            "y": -1,
+                                            "sliceX": 24,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "0b4f1f8a-af83-4fcb-8286-28342bfed450",
+                                    "tiles": [
+                                        {
+                                            "id": "060e0caa-fdc3-4ae1-8dd0-abb48047872f",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 32,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "078a1041-32b8-446e-b864-17b14917ed02",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 40,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "02967d5e-2273-4914-a1d1-281d4d47ade7",
+                                    "tiles": [
+                                        {
+                                            "id": "c1cda6ed-fed0-4d0f-b5c7-ce2fcf7fbfcf",
+                                            "x": 0,
+                                            "y": -1,
+                                            "sliceX": 48,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "af6f05c2-8b13-43af-b0ce-33bfd301dbe2",
+                                            "x": 8,
+                                            "y": -1,
+                                            "sliceX": 56,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "eb1b9211-3213-4049-9ad6-800d6edf2bd7",
+                            "frames": [
+                                {
+                                    "id": "b6776c66-87dd-4b79-8273-8c77649db0bd",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ca27db57-16cb-4b00-bf19-41f7c49e6557",
+                            "frames": [
+                                {
+                                    "id": "1f77e9ce-fe97-44f7-ab94-de3f68fae91a",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7a1cc783-a962-4c7e-a277-b9718c1a1e2e",
+                            "frames": [
+                                {
+                                    "id": "0e4b2445-072c-487f-9112-22080878dd98",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65517082-7edb-433c-a726-4975bbdfd6b0",
+                            "frames": [
+                                {
+                                    "id": "28229716-e6cc-4272-8b27-c2cd17973b57",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "84a9bfe6-7da7-4228-8233-78bc610420d9",
+                            "frames": [
+                                {
+                                    "id": "e20ef144-0db1-4067-bd40-1842dd8a05e3",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "80af067f-db0e-4e8d-ae1b-0090da414f0e",
+                            "frames": [
+                                {
+                                    "id": "6eb12f73-4909-49c0-bd0a-1b5034a8d783",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7010b29a-2b95-4bbe-abe1-2981575421ae",
+                            "frames": [
+                                {
+                                    "id": "838ad266-a591-4f9e-892d-045a7246866f",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 8,
+            "canvasWidth": 16,
+            "canvasHeight": 16,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
+        {
             "id": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
             "name": "turnip",
             "symbol": "sprite_turnip",
@@ -72700,8 +73376,8 @@
     ],
     "settings": {
         "startSceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
-        "startX": 17,
-        "startY": 14,
+        "startX": 16,
+        "startY": 10,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -72709,7 +73385,7 @@
         "showConnections": true,
         "worldScrollX": 0,
         "worldScrollY": 0,
-        "zoom": 78,
+        "zoom": 51.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
