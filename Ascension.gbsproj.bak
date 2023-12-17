@@ -6143,11 +6143,11 @@
                                                                 "command": "EVENT_SWITCH_SCENE",
                                                                 "args": {
                                                                     "sceneId": "b74e7e8d-097e-4009-8e22-4de916e5a3a0",
-                                                                    "x": 11,
+                                                                    "x": 9,
                                                                     "y": 252,
                                                                     "direction": "",
                                                                     "fadeSpeed": "2",
-                                                                    "__comment": true
+                                                                    "__comment": false
                                                                 },
                                                                 "id": "e024760d-bb98-47f7-9ce4-7626aaed1e86"
                                                             }
@@ -6298,7 +6298,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -13498,7 +13498,7 @@
                                 "operator": "==",
                                 "comparator": 4,
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -13642,7 +13642,7 @@
                                                                 "command": "EVENT_SWITCH_SCENE",
                                                                 "args": {
                                                                     "sceneId": "f44b42d1-f408-4127-b315-2f0bdbcdfb44",
-                                                                    "x": 3,
+                                                                    "x": 1,
                                                                     "y": 251,
                                                                     "direction": "",
                                                                     "fadeSpeed": "2",
@@ -13780,7 +13780,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -19180,7 +19180,7 @@
                                 "operator": "==",
                                 "comparator": 4,
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -19205,7 +19205,7 @@
                                             "operator": "==",
                                             "comparator": 3,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -19325,7 +19325,7 @@
                                                                 "args": {
                                                                     "sceneId": "642a8ebd-1feb-4029-9323-931784a4f8c1",
                                                                     "x": 18,
-                                                                    "y": 249,
+                                                                    "y": 251,
                                                                     "direction": "",
                                                                     "fadeSpeed": "2",
                                                                     "__collapse": false
@@ -37065,7 +37065,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -85650,16 +85650,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "a8a53a9c-8695-45ed-9d00-1b1669dcb010",
-        "startX": 13,
+        "startSceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+        "startX": 16,
         "startY": 11,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 641.6666259765625,
-        "worldScrollY": 45,
+        "worldScrollX": 0.8333333134651184,
+        "worldScrollY": 857.4999389648438,
         "zoom": 78,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -85688,9 +85688,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            478,
-            160,
-            161
+            489,
+            163,
+            164
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
