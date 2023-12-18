@@ -8,8 +8,8 @@
             "id": "382961a1-e615-4b92-92a7-f1a791b50b7a",
             "name": "Logo",
             "backgroundId": "28cf2668-d11a-4e74-8349-ed06db878cdd",
-            "x": 162.01087615043795,
-            "y": 74.06264652115973,
+            "x": 142.92690668478906,
+            "y": 67.9557762921521,
             "width": 20,
             "height": 18,
             "actors": [],
@@ -78955,7 +78955,8 @@
             "height": 32,
             "imageWidth": 256,
             "imageHeight": 256,
-            "filename": "sew.png"
+            "filename": "sew.png",
+            "tileColors": []
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -99278,16 +99279,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "c1aafb0f-69a3-4d45-88fd-137f75216e42",
-        "startX": 10,
-        "startY": 0,
+        "startSceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+        "startX": 1,
+        "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 11.666666030883789,
-        "worldScrollY": 37.5,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
         "zoom": 131,
         "customColorsEnabled": true,
         "sgbEnabled": false,
